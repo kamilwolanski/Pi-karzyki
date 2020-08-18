@@ -249,6 +249,15 @@ header h1{
     .container{
         /* height: 100vh; */
         width: 100vw;
+        box-shadow: inherit; 
+
+    }
+
+    .container1{
+        height: 800px;
+    }
+    .container2{
+        height: 100vh;
     }
     .top{
     padding: 6.5rem 0;
