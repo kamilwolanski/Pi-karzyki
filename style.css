@@ -1,0 +1,292 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: lemonchiffon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 90vh;
+    max-width: 98rem; 
+    margin:0 auto;
+    box-shadow: 0 0 10px #000; 
+    /* width: 440px; */
+    background-color: #fff;
+    box-shadow: 0 0 10px #000;
+    /* background-color: red; */
+    transition: 1.5s;
+
+    
+}
+
+.hidden{
+    position: absolute;
+    /* left: -1000px; */
+    transform: translateX(-1500px);
+}
+
+
+.top{
+    background:linear-gradient(315deg, rgba(0,0,0,0.3368697820925245) 0%, rgba(0,0,0,0.28644961402529767) 33%, rgba(0,0,0,0.33126754119616597) 93%), url("imgs/piłkarzyki.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo i{
+    font-size: 6rem;
+    padding: 0 2rem;
+    color: #fff;
+}
+
+.logo h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 6rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.top h3{
+    font-size: 3rem;
+    font-family: 'Jaldi', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.input-container{
+    width: 100%;
+    /* height: 80%; */
+    padding: 4rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.input-container input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(197,197,197);
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.error{
+    text-align: center;
+    color: rgba(255, 0, 0, 0.582);
+    visibility: hidden;
+}
+.button{
+    display: block;
+    margin:20px auto;
+    padding: 20px 10px;
+    width: 60%;
+    font-size: 24px;
+    border-radius: 8px;
+    color:#fff;
+    text-transform: uppercase;
+    background-color:royalblue;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: rgb(44, 86, 214);
+}
+
+.container2{
+    position: absolute;
+    z-index: -1;
+    background:linear-gradient(315deg, rgba(63,122,188,0.49653364763874297) 0%, rgba(190,40,40,0.33406866164434523) 56%, rgba(56,110,174,0.5301470930168943) 100%), url("imgs/stadiom.jpg") center no-repeat;
+    background-size: cover;
+}
+
+
+.box{
+    width: 30%;
+    height: 60%;
+    margin: 20px;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+}
+
+.team1{
+    background-color: brown;
+}
+
+.team2{
+    background-color: royalblue;
+}
+/* .box::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 8rem;
+    background-color: rgba(0,0,0,.2);
+} */
+
+.pozycja{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* height: 8rem; */
+    background-color: rgba(0,0,0,.2);
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 15px 15px 0px 0px;
+    color: white;
+
+}
+.box h3{
+    margin-top: 3rem;
+    font-size: 3rem;
+    visibility: hidden;
+}
+
+.red{
+    position: absolute;
+    top:20%;
+    left: 3%;
+    z-index: 1;
+
+}
+
+.blue{
+    position: absolute;
+    top:20%;
+    right: 3%;
+    z-index: 1;
+}
+.boxes{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header{
+    width: 100%;
+    padding: 2rem 0;
+}
+
+header h1{
+    text-align: center;
+    font-size: 8rem;
+    font-family: 'Jaldi', sans-serif;
+    color: white;
+    
+
+}
+
+.return{
+    display: block;
+    margin: 0 auto;
+    border:none;
+    background-color: transparent;
+
+}
+
+.return i{
+    font-size: 5rem;
+    cursor: pointer;
+    color: white;
+
+}
+@media(max-width:900px){
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+    }
+    .top{
+    padding: 6.5rem 0;
+
+    }
+    .logo i{
+        font-size: 4rem;
+    }
+
+    .logo h1{
+        font-size: 4rem;
+    }
+    
+    header{
+        margin-top: 3rem;
+    }
+    header h1{
+        font-size: 4rem;
+    }
+    .boxes{
+        width: 100%;
+        margin:0 auto;
+        transform: translateY(6rem);
+    }
+    .box{
+        width: 40%;
+        height: 70%;
+        margin: 10px;
+        padding: 5rem;
+    }
+
+    .box h3{
+        font-size: 3rem;
+    }
+    .red,.blue{
+        width: 22%;
+        display: none;
+    }
+
+    form{
+        transform: translateY(10rem);
+    }
+
+    .pozycja h1{
+        font-size: 1.5rem;
+    }
+}
