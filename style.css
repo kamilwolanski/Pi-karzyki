@@ -281,6 +281,13 @@ header h1{
     .box h3{
         font-size: 3rem;
     }
+
+    .button{
+        display: block;
+        margin:10px auto;
+        padding: 5px 10px;
+        width: 40%;
+    }
     .red,.blue{
         width: 22%;
         display: none;
