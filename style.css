@@ -271,7 +271,7 @@ header h1{
     }
     
     header{
-        margin-top: 3rem;
+        margin-top: 8rem;
     }
     header h1{
         font-size: 4rem;
@@ -304,7 +304,7 @@ header h1{
     }
 
     form{
-        transform: translateY(10rem);
+        transform: translateY(15rem);
     }
 
     .pozycja h1{
